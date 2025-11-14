@@ -1,0 +1,394 @@
+header {
+    background-color: rgba(15, 15, 15, 0.6);
+    position: top center;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    padding: 5px;
+    margin-top: 0%;
+    border-radius: 15px;
+}
+
+#navbar {
+    text-align: center;
+}
+
+.nav {
+    display: inline;
+    padding: 6px;
+    border-radius: 5px;
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: rgb(23, 134, 17);
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+header li {
+    display: inline; /* Keep inline display */
+    margin: 0 15px; /* Add spacing between items */
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    display: flex; /* Updated to use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Vertically align items */
+    color: rgb(229, 229, 229);
+    background-color: rgb(22, 22, 22);
+    width: 99%;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer a{
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgb(30, 30, 30);
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#profil {
+    display: flex; /* Updated to use flexbox */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center items horizontally */
+    color: rgb(229, 229, 229);
+    background-color: rgba(15, 15, 15, 0.6);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#profil img {
+    border-radius: 120px;
+    width: 100px;
+    height: 120px; /* Adjusted height to crop from the bottom */
+    padding: 10px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+#exp {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(15, 15, 15, 0.6);
+    color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+#exp ul {
+    padding: 2px;
+    text-align: left;
+    text-align: center;
+}
+
+#exp li {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+a{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(229, 229, 229);
+    padding: 5px;
+}
+
+a:hover{
+    background-color: rgba(13, 119, 7, 0.812);
+    border-radius: 10px;
+}
+
+#formation {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(15, 15, 15, 0.6);
+    color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+#formation ul {
+    padding: 2px;
+    text-align: left;
+    text-align: center;
+}
+
+#formation li {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+#formation span{
+    font-size: 24px;
+}
+
+#recherche{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(15, 15, 15, 0.6);
+    color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+#recherche span{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*
+----------------------------------------------------------------
+--------------------------page project--------------------------
+----------------------------------------------------------------
+*/
+
+#projet{
+    background-color: rgba(15, 15, 15, 0.6);
+}
+
+.carte img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    position: relative;
+    display: flex inline;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.carte a:hover{
+    background-color: rgba(15, 15, 15, 0);
+}
+
+.carte span{
+    background-color: rgba(15, 15, 15, 0.6);
+    color: rgb(229, 229, 229);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    width: 90%;
+    margin-left: 2%;
+    text-align: justify;
+}
+
+.carte{
+    margin-top: 20px;
+    display: flex; /* Updated to use flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+/*
+----------------------------------------------------------------
+--------------------------page contact--------------------------
+----------------------------------------------------------------
+*/
+
+#comp{
+    background-color: rgba(15, 15, 15, 0.6);
+    text-decoration: none;
+}
+
+.grille-container {
+    background: rgb(15, 15, 15, 0.6);
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    gap: 5px;
+}
+
+
+.grille-item img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.grille-item {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(229, 229, 229);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grille-item span {
+    margin-top: 10px;
+    font-size:x-large;
+}
+
+.grille-item img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.grille #php img{
+    background-color: #f0f0f0;
+    width: 75%;
+    height: auto;
+    padding: 10px;
+}
+
+.grille #git img{
+    background-color: #f0f0f0;
+    width: 80%;
+    height: auto;
+}
+
+.grille #sqlserver img{
+    background-color: #ffffff;
+    width: 90%;
+    height: auto;
+}
+
+.grille #pgsql img{
+    background-color: #ffffff;
+    width: 85%;
+    height: auto;
+}
+
+.grille #dbeaver img{
+    background-color: #ffffff;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 710px) {
+    .grille {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .grille-item img {
+        max-width: 70%;
+        border-radius: 10px;
+    }
+}
+
+
+/*
+----------------------------------------------------------------
+--------------------------page CV-------------------------------
+----------------------------------------------------------------
+*/
+
+.cv{
+    display:block;
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    padding: 0.5rem;
+}
+
+.cv a{
+    font-size: 2.5rem;
+    color: rgb(100, 243, 50);
+    text-decoration: underline;
+}
+
+.cv a:hover{
+    color: white;
+}
+
+/*
+----------------------------------------------------------------
+--------------------------page veille---------------------------
+----------------------------------------------------------------
+*/
+
+
+        .veille {
+            display: block;
+            background-color: rgba(15, 15, 15, 0.6);
+            color: #fff;
+            border-radius: 10px;
+            font-size: 2rem;
+            margin-top: 20px;
+            padding: 0.5rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .veille span {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            padding: 0.5rem;
+            display: block;
+        }
+
+        .veille li {
+            text-align: left;
+            font-size: 1.2rem;
+            padding-left: 2rem;
+        }
+
+        #a{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #b{
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .source {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+        }

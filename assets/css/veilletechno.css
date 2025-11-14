@@ -1,0 +1,134 @@
+.veille-n8n{
+    background-color: rgba(20, 20, 20, 0.7);
+    color: rgb(229, 229, 229);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.veille-n8n img {
+    max-width: 85%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.veille {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: rgb(229, 229, 229);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+}
+
+.veille h2 {
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.rss-feed {
+    margin: 20px 0;
+}
+
+.rss-item {
+    background-color: rgba(40, 40, 40, 0.7);
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 7px;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.rss-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.rss-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #4CAF50;
+}
+
+.rss-item h3 a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rss-item h3 a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+.rss-meta {
+    color: #a0a0a0;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+}
+
+.rss-source {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.rss-date {
+    color: #888;
+    font-style: italic;
+}
+
+.rss-description {
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+    color: #e0e0e0;
+    font-size: 0.7em;
+}
+
+/* Style pour les titres des sections de veille existantes */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.title-container h2 {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.title-container img {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Style pour les listes de la veille existante */
+.veille ul {
+    padding-left: 20px;
+}
+
+.veille li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Style pour les sources */
+.source {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    margin-top: 15px;
+    font-size: 0.9em;
+}

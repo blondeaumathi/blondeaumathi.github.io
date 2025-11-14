@@ -1,0 +1,17 @@
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Fichiers de configuration avec mots de passe
+config.php
+
+# Logs
+*.log
+
+# Dossiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers vendor (si vous utilisez Composer)
+/vendor/
