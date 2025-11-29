@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page</title>
+    <title>Veille Technologique - Mathis BLONDEAU-PATISSIER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/veilletechno.css">
     <link rel="icon" href="../assets/images/pp.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
+        <div class="logo">Mathis BP</div>
         <nav>
-            <ul>
-                <div id="navbar">
-                    <li><a href="/public/index.html" class="nav">Accueil</a></li>
-                    <li><a href="/public/project.html" class="nav">Projets</a></li>
-                    <li><a href="/public/competence.html" class="nav">Compétences</a></li>
-                    <li><a href="/public/document.html" class="nav">Document</a></li>
-                    <li><a href="/public/veilletechno.html" class="nav">Veille technologique</a></li>
-                </div>
+            <ul id="navbar">
+                <li><a href="/public/index.html" class="nav-link">Accueil</a></li>
+                <li><a href="/public/project.html" class="nav-link">Projets</a></li>
+                <li><a href="/public/competence.html" class="nav-link">Compétences</a></li>
+                <li><a href="/public/document.html" class="nav-link">Document</a></li>
+                <li><a href="/public/veilletechno.html" class="nav-link">Veille technologique</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
-<link rel="stylesheet" href="../assets/css/veilletechno.css">
+    <div class="container">
+        <div class="veille-n8n" style="text-align: center; margin-bottom: 3rem;">
+            <h1>Mon outil de Veille Technologique</h1>
+            <img src="../assets/images/veille/n8n_Agent.png"
+                alt="Mon agent N8N que j'utilise pour ma veille technologique"
+                style="max-width: 100%; border-radius: 12px; margin-top: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        </div>
 
-<div class="veille-n8n"> 
-    <h1>Mon outil de Veille Technologique</h1>
-    <img src="../assets/images/veille/n8n_Agent.png" alt="Mon agent N8N que j'utilise pour ma veille technologique">
-
-</div>
-
-<div class="veille">
-    <h2>Articles récupérés depuis la base de données Supabase</h2>
-    <div id="liste-articles">
-            
+        <div class="veille">
+            <h2>Articles récupérés depuis la base de données Supabase</h2>
+            <div id="liste-articles" class="project-grid">
+                <!-- Articles will be injected here by JS -->
+            </div>
+        </div>
     </div>
-</div>
 
+    <footer>
+        <p fs-hacks-element="year">&copy; 2025</p>
+        <p>Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/in/mathis-blondaeu-patissier/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </footer>
 
-<footer>
-    <p fs-hacks-element="year">&copy; 2025</p>
-    <p>Tous droits réservés.</p>
-    <a href="https://www.linkedin.com/in/mathis-blondaeu-patissier/">
-        <i class="fab fa-linkedin"></i>
-    </a>
-</footer>
-    
-<script type="module" src="../assets/js/javascript.js"></script>
+    <script type="module" src="../assets/js/javascript.js"></script>
+    <script>
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        const icon = mobileBtn.querySelector('i');
 
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
 </body>
+
 </html>

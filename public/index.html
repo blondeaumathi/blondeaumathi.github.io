@@ -1,75 +1,132 @@
-<!-- header.php -->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ma Page</title>
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="icon" href="../assets/images/pp.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <h1>Bienvenue sur mon portfolio</h1>
-            <nav>
-                <ul>
-                    <div id="navbar">
-                        <li><a href="/public/index.html" class="nav">Accueil</a></li>
-                        <li><a href="/public/project.html" class="nav">Projets</a></li>
-                        <li><a href="/public/competence.html" class="nav">Compétences</a></li>
-                        <li><a href="/public/document.html" class="nav">Document</a></li>
-                        <li><a href="/public/veilletechno.html" class="nav">Veille technologique</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
 
-        <div id="profil">
-            <img src="../assets/images/profil.jpg" alt="Profil">
-            <h1>Mathis BLONDEAU-PATISSIER</h1>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathis BLONDEAU-PATISSIER - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/pp.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-        <!-- <div id="recherche">
-            <h2>Recherche</h2>
-            <span>Recherche un stage du 19 mai 2025 au 27 juin 2025 en développement d'une durée de 6 semaines </span>
-        </div> -->
-
-        <div id="exp">
-            <h2>Expérience</h2>
-            <span>Stage de 4 semaines chacun</span>
-            <ul>
-                <li><a href="https://www.les-experts-unis.com/">Stage chez Les Experts Unis</a><br><span> MAI 2025 - JUIN 2025 </span><br><span>Dévellopement d'un outil de CRM</span></li>
-                <li><a href="https://www.platinium-informatique.fr/"> Stage chez Platinium Informatique Dole</a><br><span> Mars 2024 - Avril 2024 </span></li>
-                <li><a href="https://www.platinium-informatique.fr/">Stage chez Platinium Informatique Dole</a><br><sapn> Septembre 2023 - Octobre 2023</span></li>
-                <li><a href="https://agences.xefi.com/fr/bourgogne-franche-comte/jura/lons-le-saunier/xefi-lons-132">Stage chez Xefi Lons-Le-Saunier</a><br><sapn> Mai 2023 - Juin 2023</span></li>
-                <li><a href="https://montmorot.educagri.fr/">Stage au Lycée agricole de Montmorot</a><br><sapn> Novembre 2022 - Décembre 2022</span></li>
+<body>
+    <header>
+        <div class="logo">Mathis BP</div>
+        <nav>
+            <ul id="navbar">
+                <li><a href="/public/index.html" class="nav-link">Accueil</a></li>
+                <li><a href="/public/project.html" class="nav-link">Projets</a></li>
+                <li><a href="/public/competence.html" class="nav-link">Compétences</a></li>
+                <li><a href="/public/document.html" class="nav-link">Document</a></li>
+                <li><a href="/public/veilletechno.html" class="nav-link">Veille technologique</a></li>
             </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
+    </header>
 
-        <div id="formation"> 
-            <h2>Formation</h2>
-            <span alt="Services Informatiques aux Organisations option B Solutions Logicielles et Applications Métiers">BTS SIO option SLAM (développement)</span>
-            <ul>
-                <li><a href="https://www.sb-lycee.fr/">Lycée Saint-Benigne</a></li>
-                <li><span>2024 - 2026</span></li>
-            </ul>
+    <div id="profil">
+        <img src="../assets/images/profil.jpg" alt="Profil">
+        <h1>Mathis BLONDEAU-PATISSIER</h1>
+    </div>
 
-            <span>BAC Professionnel Systemes Numériques option RISC</span>
-            <ul>
-                <li><a href="https://enseignementprive-lons.fr/">Lycée Saint-Marie</a></li>
-                <li><span>2021 - 2024</span></li>
-            </ul>
+    <div id="exp">
+        <h2>Expérience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Mai 2025 - Juin 2025</span>
+                    <a href="https://www.les-experts-unis.com/" class="timeline-title">Stage chez Les Experts Unis</a>
+                    <p class="timeline-desc">Développement d'un outil de CRM. Stage de 6 semaines.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Mars 2024 - Avril 2024</span>
+                    <a href="https://www.platinium-informatique.fr/" class="timeline-title">Stage chez Platinium
+                        Informatique Dole</a>
+                    <p class="timeline-desc">Stage de 4 semaines.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Septembre 2023 - Octobre 2023</span>
+                    <a href="https://www.platinium-informatique.fr/" class="timeline-title">Stage chez Platinium
+                        Informatique Dole</a>
+                    <p class="timeline-desc">Stage de 4 semaines.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Mai 2023 - Juin 2023</span>
+                    <a href="https://agences.xefi.com/fr/bourgogne-franche-comte/jura/lons-le-saunier/xefi-lons-132"
+                        class="timeline-title">Stage chez Xefi Lons-Le-Saunier</a>
+                    <p class="timeline-desc">Stage de 4 semaines.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Novembre 2022 - Décembre 2022</span>
+                    <a href="https://montmorot.educagri.fr/" class="timeline-title">Stage au Lycée agricole de
+                        Montmorot</a>
+                    <p class="timeline-desc">Stage de 4 semaines.</p>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div id="formation">
+        <h2>Formation</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">2024 - 2026</span>
+                    <a href="https://www.sb-lycee.fr/" class="timeline-title">BTS SIO option SLAM</a>
+                    <p class="timeline-desc">Lycée Saint-Benigne. Services Informatiques aux Organisations option B
+                        Solutions Logicielles et Applications Métiers.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">2021 - 2024</span>
+                    <a href="https://enseignementprive-lons.fr/" class="timeline-title">BAC Professionnel Systemes
+                        Numériques</a>
+                    <p class="timeline-desc">Lycée Saint-Marie. Option RISC.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <footer>
+        <p fs-hacks-element="year">&copy; 2025</p>
+        <p>Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/in/mathis-blondaeu-patissier/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </footer>
 
-        <footer>
-            <p fs-hacks-element="year">&copy; 2025</p>
-            <p>Tous droits réservés.</p>
-            <a href="https://www.linkedin.com/in/mathis-blondaeu-patissier/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </footer>
-    </body>
+    <script>
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        const icon = mobileBtn.querySelector('i');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+
 </html>

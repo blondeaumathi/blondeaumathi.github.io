@@ -1,134 +1,151 @@
-.veille-n8n{
-    background-color: rgba(20, 20, 20, 0.7);
-    color: rgb(229, 229, 229);
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 90%;
+/* Veille Techno Specific Styles */
+
+.veille-n8n {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1000px;
     text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .veille-n8n img {
-    max-width: 85%;
-    border-radius: 10px;
-    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    border: 1px solid var(--card-border);
 }
 
-.veille {
-    background-color: rgba(15, 15, 15, 0.6);
-    color: rgb(229, 229, 229);
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 90%;
-}
-
-.veille h2 {
-    font-size: 30px;
-    color: rgb(229, 229, 229);
-    text-align: center;
-    text-decoration: underline;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
+/* RSS Feed Styles */
 .rss-feed {
-    margin: 20px 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .rss-item {
-    background-color: rgba(40, 40, 40, 0.7);
-    border-left: 4px solid #4CAF50;
-    margin-bottom: 7px;
-    padding: 15px;
-    border-radius: 0 10px 10px 0;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    transition: var(--transition);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .rss-item:hover {
     transform: translateX(5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    background-color: rgba(50, 50, 50, 0.8);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .rss-item h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.4em;
-    color: #4CAF50;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .rss-item h3 a {
-    color: #4CAF50;
+    color: var(--accent-color);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .rss-item h3 a:hover {
-    color: #45a049;
+    color: var(--accent-hover);
     text-decoration: underline;
 }
 
 .rss-meta {
-    color: #a0a0a0;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 3px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 0.5rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .rss-source {
-    font-weight: bold;
-    color: #4CAF50;
+    font-weight: 600;
+    color: var(--accent-color);
 }
 
 .rss-date {
-    color: #888;
     font-style: italic;
 }
 
 .rss-description {
-    margin: 10px 0 0 0;
-    line-height: 1.5;
-    color: #e0e0e0;
-    font-size: 0.7em;
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-size: 1rem;
 }
 
-/* Style pour les titres des sections de veille existantes */
+/* Title Container */
 .title-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .title-container h2 {
     flex: 1;
     text-align: left;
-    margin-right: 20px;
+    margin: 0;
+    width: auto;
+}
+
+.title-container h2::after {
+    margin: 0.5rem 0 0;
+    /* Align underline to left */
 }
 
 .title-container img {
     max-width: 150px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Style pour les listes de la veille existante */
+/* List Styles */
 .veille ul {
-    padding-left: 20px;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: var(--text-secondary);
 }
 
 .veille li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
-/* Style pour les sources */
+/* Source Link */
 .source {
     text-align: right;
     font-style: italic;
-    color: #888;
-    margin-top: 15px;
-    font-size: 0.9em;
+    color: var(--text-secondary);
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title-container h2 {
+        text-align: center;
+    }
+
+    .title-container h2::after {
+        margin: 0.5rem auto 0;
+    }
 }
